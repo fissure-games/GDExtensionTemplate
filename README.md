@@ -4,7 +4,7 @@
 
 This project is meant as a starting point for creating new C++/CMake-based Godot 4 extensions. The goal is to lower the barrier to entry to building a GDExtension using [CMake](https://cmake.org).
 
-It is currently set up to work with the **[Godot 4.0.2](https://github.com/godotengine/godot/releases/tag/4.0.2-stable)** release (see [tags](https://github.com/asmaloney/GDExtensionTemplate/tags) for previous versions).
+It is currently set up to work with the **[Godot 4.0.3](https://github.com/godotengine/godot/releases/tag/4.0.3-stable)** release (see [tags](https://github.com/asmaloney/GDExtensionTemplate/tags) for previous versions).
 
 Since the majority of C++ open source projects use CMake, I wanted to offer an alternative to the _scons_ system for building Godot extensions (if you use _scons_, check out Nathan Franke's [gdextension](https://github.com/nathanfranke/gdextension) template or Patrick's [GDExtensionSummator](https://github.com/paddy-exe/GDExtensionSummator) template).
 
@@ -71,6 +71,7 @@ To use this for your own project:
   If you also have plain C files in your project, add `C` to the languages.
 - replace the example code in `src` with your own (I would suggest keeping _RegisterExtension.cpp_ and using it to register your classes)
   > **Note:** If you change the entry symbol (`GDExtensionInit`) in _RegisterExtension.cpp_, you will need to update your `templates/*.gdextension.in` files.
+- replace `CHANGELOG.md` with your own (I would encourage adhering to [Semantic Versioning](https://semver.org/spec/v2.0.0.html) and the use of [Keep a Changelog](https://keepachangelog.com/en/1.0.0/) )
 - replace this `README.md` with your own
 
 Optional:
